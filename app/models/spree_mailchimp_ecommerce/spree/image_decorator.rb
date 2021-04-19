@@ -19,4 +19,4 @@ module SpreeMailchimpEcommerce
     end
   end
 end
-Spree::Image.prepend(SpreeMailchimpEcommerce::Spree::ImageDecorator)
+#Spree::Image.prepend(SpreeMailchimpEcommerce::Spree::ImageDecorator)
