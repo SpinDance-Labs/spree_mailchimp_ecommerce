@@ -28,6 +28,7 @@ module SpreeMailchimpEcommerce
       end
 
       def create_mailchimp_cart
+        return if in_person?
         return if mailchimp_cart_created
 
         ::SpreeMailchimpEcommerce::CreateOrderCartJob.perform_later(mailchimp_cart)
